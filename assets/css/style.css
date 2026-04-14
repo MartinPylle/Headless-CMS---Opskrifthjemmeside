@@ -1,7 +1,48 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
 }
+
+
+/* h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+
+} */
+
+
+/* Variables */
+:root {
+
+
+
+
+    --smSpacer: 25px;
+    --mdSpacer: 50px;
+    --xlSpacer: 75px;
+    --headershadow: 4px 4px 4px #000000cc;
+}
+
+/* Navbar */
+
+
+/* Martin start */
+
+/* lerke start */
+
+/* Sebastian start */
+
+/* Anton start */
+
+
+/* Footer */
