@@ -1,5 +1,5 @@
-// const containerEl = document.querySelector(".container");
 
+// Alle opskrifter
 const baseUrl = "https://api.martinnguyen.dk/wp-json/";
 
 const postsUrl = "wp/v2/posts";
@@ -38,4 +38,16 @@ function renderArticles1(posts, selector) {
             <p class="author">${post.acf.forfatter[0].post_title}</p>
         </article>`;
     })
+}
+
+
+// Enkelte opskrifter
+
+const rec = getRecipes();
+
+function getRecipes() {
+    fetch(baseUrl)
+        .then(res => res.json())
+        .then(data => renderArticles1(data))
+        .catch(err => console.log("Fejl: ", err));
 }
