@@ -6,22 +6,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Simpel & Savory</title>
 	<link rel="stylesheet" href="./assets/css/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 	<script src="./assets/js/app.js" defer></script>
+	<script src="./assets/js/function.js" defer></script>
 
 </head>
 
 <body>
 	<nav>
 		<div class="navlogo">
+			<!-- https://fonts.google.com/icons?selected=Material+Symbols+Outlined:cooking:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=food&icon.size=24&icon.color=%23FFFFFF -->
 			<img class="image-logo" src="/assets/img/logo-white.svg" alt="Logo">
 			<p class="logoname">Simpel & Savory</p>
 		</div>
 			<ul>
 				<li>
 					<a href="#">Recipes</a>
-					<a href="#">Recipes Collection</a>
+					<a href="#">Recipes Collection
+						<i class="fa-solid fa-angle-down"></i>
+					</a>
 				</li>
 			</ul>
+			<div class="dropdown-content">
+				<a href="#">Summer Recipes</a>
+				<a href="#">Food under 30 min</a>
+			</div>
 	</nav>
 
 
@@ -31,6 +40,24 @@
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At laudantium iure, soluta nostrum nam doloremque voluptatibus atque placeat est amet veritatis quod nesciunt numquam nobis velit laborum provident cupiditate aliquid!</p>
 		</article> -->
 	</div>
+
+	<footer>
+		<div class="newsletter-content">
+			<div class="logo-content">
+				<img src="./assets/img/logo-white.svg" alt="logo">
+				<p>Subscribe to our newsletter</p>
+				<p>All for free</p>
+			</div>
+		</div>
+
+		
+		<div class="copyrightbar">
+			<div class="copyright-container">
+				<p>© Make Better Food</p>
+				<p>Cooking With Love By Kevin Corney</p>
+			</div>
+		</div>
+	</footer>
 
 
 </body>
