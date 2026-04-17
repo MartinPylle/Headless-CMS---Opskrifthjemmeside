@@ -12,7 +12,18 @@ body {
     margin: 0;
 }
 
-
+/* Variables */
+:root {
+    --primærycolor: #E5B285;
+    --secondaryColor: #ebc5a3;
+    --backgroundsColor: #fbf2e7;
+    --textColor: #675d51; 
+    
+    --smSpacer: 25px;
+    --mdSpacer: 50px;
+    --xlSpacer: 75px;
+    --headershadow: 4px 4px 4px #000000cc;
+}
 h1, 
 h2, 
 h3, 
@@ -22,23 +33,53 @@ h6 {
     font-family: "Playfair Display", serif;
 } 
 
+p {
+    color: var(--textColor);
+}
 
-
-/* Variables */
-:root {
-    --primærycolor: #E5B285;
-    --secondaryColor: #ebc5a3;
-    --backgroundsColor: #fbf2e7;
-    --textColor: #675d51; 
-
-    --smSpacer: 25px;
-    --mdSpacer: 50px;
-    --xlSpacer: 75px;
-    --headershadow: 4px 4px 4px #000000cc;
+a, li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: "Playfair Display", serif;
 }
 
 /* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    padding: 1rem;
+    background-color: var(--secondaryColor);
+}
+
+.image-logo {
+    width: 45px;
+    height: 45px;
+}
+.navlogo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.logoname {
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-weight: 500;
+    font-size: 25px;
+    margin-right: 15rem;
+}
 
 /* Martin start */
 
