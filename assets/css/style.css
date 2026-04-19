@@ -57,7 +57,7 @@ nav {
     /* sticky navbar */
     position: sticky;
     top: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     padding: 1rem;
     background-color: var(--secondaryColor);
@@ -91,16 +91,12 @@ nav li a:hover{
 }
 
 li {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
     font-weight: 500;
     font-size: 25px;
     margin-right: 10rem;
 }
 
 /* Dropdown */
-
 ul {
     display: flex;
 }
@@ -114,12 +110,11 @@ ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: black;
+    background-color: #ebc5a3;
     min-width: 180px;
     flex-direction: column;
     padding: 1rem;
     z-index: 1000;
-    cursor: pointer;
 }
 
 .dropdown-content a {
