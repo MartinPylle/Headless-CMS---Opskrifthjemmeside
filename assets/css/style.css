@@ -22,8 +22,12 @@ body {
     --smSpacer: 25px;
     --mdSpacer: 50px;
     --xlSpacer: 75px;
-    --headershadow: 4px 4px 4px #000000cc;
+
+    --buttonHoverEffect: #b58156;
+    --headerShadow: 4px 4px 4px #000000cc;
+    --buttonShadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
+
 h1, 
 h2, 
 h3, 
@@ -49,6 +53,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     /* sticky navbar */
     position: sticky;
     top: 0;
@@ -56,6 +61,15 @@ nav {
 
     padding: 1rem;
     background-color: var(--secondaryColor);
+}
+
+nav li a {
+    border-bottom: 2px solid transparent ;
+    transition: border-color 0.3s;
+}
+
+nav li a:hover{
+    border-bottom: 2px solid #b58156;
 }
 
 .image-logo {
@@ -85,7 +99,37 @@ li {
     margin-right: 10rem;
 }
 
+/* Dropdown */
 
+ul {
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    min-width: 180px;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
 
 /* Martin start */
 
@@ -97,6 +141,70 @@ li {
 
 
 /* Footer */
+.newsletter-content {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: var(--primærycolor);
+}
+
+.logo-content p {
+    color: white;
+    font-size: 26px;
+}
+
+/* Display block bruges til at få label-navn til at stå ovenover inputfeltet, da det er en inline-element */
+label {
+    display: block;
+    text-align: left;
+    font-family: "Playfair Display", serif;
+}
+
+input {
+    padding: 1.3rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    font-style: italic;
+    font-size: 17px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem auto;
+    color: white;
+    font-size: 20px;
+}
+
+#email-help {
+    font-size: 15px;
+    font-style: italic;
+}
+
+#subscribe-button {
+    background-color: var(--secondaryColor);
+    border: none;
+    color: white;
+    box-shadow: var(--buttonShadow);
+    cursor: pointer;
+    transition: 0.3s;
+    
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* hover effect */
+#subscribe-button:hover {
+    background-color: var(--buttonHoverEffect);
+}
+
+/* Copyrightbar-container */
 .copyrightbar {
     padding: 0.9rem;
     background-color: var(--secondaryColor);
@@ -104,19 +212,22 @@ li {
 
 .copyright-container {
     display: flex;
-    justify-content: center;
-    gap: 60rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .copyright-container p {
     color: white;
     font-weight: 500;
+    font-family: "Playfair Display", serif;
 }
 
 
 
 /* test */
-.container {
+/* .container {
     max-width: 1000px;
     margin: 1rem auto;
     border-radius: 6px;
@@ -137,4 +248,4 @@ img {
     font-style: italic;
     color:burlywood;
     font-weight: bold;
-}
+} */

@@ -16,25 +16,30 @@
 	<nav>
 		<div class="navlogo">
 			<!-- https://fonts.google.com/icons?selected=Material+Symbols+Outlined:cooking:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=food&icon.size=24&icon.color=%23FFFFFF -->
-			<img class="image-logo" src="/assets/img/logo-white.svg" alt="Logo">
-			<p class="logoname">Simpel & Savory</p>
+			 <a href="index.html">
+				 <img class="image-logo" src="/assets/img/logo-white.svg" alt="Logo">
+				</a>
+				<p class="logoname">Simpel & Savory</p>
 		</div>
 			<ul>
-				<li>
-					<a href="#">Recipes</a>
-					<a href="#">Recipes Collection
+				<li><a href="#">Recipes</a></li>
+
+				<li class="dropdown">
+					<a href="#" class="dropbtn">
+						Recipes Collection
 						<i class="fa-solid fa-angle-down"></i>
-					</a>
+					</a>					
+					
+					<div class="dropdown-content">
+						<a href="#">Summer Recipes</a>
+						<a href="#">Food under 30 min</a>
+					</div>
 				</li>
 			</ul>
-			<div class="dropdown-content">
-				<a href="#">Summer Recipes</a>
-				<a href="#">Food under 30 min</a>
-			</div>
 	</nav>
 
 
-		<div class="container">
+	<div class="container">
 		<!-- <article>
 			<h2>OVERSKRIFT</h2>
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At laudantium iure, soluta nostrum nam doloremque voluptatibus atque placeat est amet veritatis quod nesciunt numquam nobis velit laborum provident cupiditate aliquid!</p>
@@ -44,13 +49,25 @@
 	<footer>
 		<div class="newsletter-content">
 			<div class="logo-content">
-				<img src="./assets/img/logo-white.svg" alt="logo">
+				<a href="index.html">
+					<img class="image-logo" src="./assets/img/logo-white.svg" alt="logo">
+				</a>
 				<p>Subscribe to our newsletter</p>
-				<p>All for free</p>
+				<p>to get ours newest recipes</p>
 			</div>
-		</div>
+			<!-- Form -->
+			<form>
+				<label for="name" aria-label="Enter your full name">Full name</label>
+				<input type="text" id="name" name="name" placeholder="Enter your full name etc. Joakim Hansen" required><br>
 
-		
+				<label for="email" aria-label="Enter your email address">Email address</label>
+				<p id="email-help">We'll only use your email for the newsletter</p>
+				<input type="text" id="email" name="email" placeholder="Enter your email here etc. JoakimHansen123@gmail.com" aria-describedby="email-help" required><br>
+
+				<input id="subscribe-button" type="submit" value="Subscribe" aria-label="Press the button to subcsribe">
+			</form>
+		</div>
+		<!-- Copyright-bar -->
 		<div class="copyrightbar">
 			<div class="copyright-container">
 				<p>© Make Better Food</p>
