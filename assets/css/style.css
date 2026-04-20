@@ -1,7 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
     margin: 0;
+}
+
+/* Variables */
+:root {
+    --primærycolor: #E5B285;
+    --secondaryColor: #ebc5a3;
+    --backgroundsColor: #fbf2e7;
+    --textColor: #675d51; 
+    
+    --smSpacer: 25px;
+    --mdSpacer: 50px;
+    --xlSpacer: 75px;
+
+    --buttonHoverEffect: #b58156;
+    --headerShadow: 4px 4px 4px #000000cc;
+    --buttonShadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: "Playfair Display", serif;
+} 
+
+p {
+    color: var(--textColor);
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* sticky navbar */
+    position: sticky;
+    top: 0;
+    /* overflow: hidden; */
+
+    padding: 1rem;
+    background-color: var(--secondaryColor);
+}
+
+nav li a {
+    border-bottom: 2px solid transparent ;
+    transition: border-color 0.3s;
+}
+
+nav li a:hover{
+    border-bottom: 2px solid #b58156;
+}
+
+.image-logo {
+    width: 45px;
+    height: 45px;
+}
+.navlogo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.logoname {
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+li {
+    font-weight: 500;
+    font-size: 25px;
+    margin-right: 10rem;
+}
+
+/* Dropdown */
+ul {
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ebc5a3;
+    min-width: 180px;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* Martin start */
+
+/* lerke start */
+
+/* Sebastian start */
+
+/* Anton start */
+
+
+/* Footer */
+.newsletter-content {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: var(--primærycolor);
+}
+
+.logo-content p {
+    color: white;
+    font-size: 26px;
+}
+
+/* Display block bruges til at få label-navn til at stå ovenover inputfeltet, da det er en inline-element */
+label {
+    display: block;
+    text-align: left;
+    font-family: "Playfair Display", serif;
+}
+
+input {
+    padding: 1.3rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    font-style: italic;
+    font-size: 17px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem auto;
+    color: white;
+    font-size: 20px;
+}
+
+#email-help {
+    font-size: 15px;
+    font-style: italic;
+}
+
+#subscribe-button {
+    background-color: var(--secondaryColor);
+    border: none;
+    color: white;
+    box-shadow: var(--buttonShadow);
+    cursor: pointer;
+    transition: 0.3s;
+    
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* hover effect */
+#subscribe-button:hover {
+    background-color: var(--buttonHoverEffect);
+}
+
+/* Copyrightbar-container */
+.copyrightbar {
+    padding: 0.9rem;
+    background-color: var(--secondaryColor);
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.copyright-container p {
+    color: white;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
 }
