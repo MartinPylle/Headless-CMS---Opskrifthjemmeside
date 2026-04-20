@@ -57,6 +57,7 @@ nav {
     /* sticky navbar */
     position: sticky;
     top: 0;
+    z-index: 9999;
     /* overflow: hidden; */
 
     padding: 1rem;
@@ -127,6 +128,144 @@ nav ul {
 }
 
 /* Martin start */
+header img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.recipes-content {
+    background-color: var(--backgroundsColor);
+    margin-top: 1.5rem;
+}
+
+.recipes-content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+.recipes-header-content {
+    text-align: center;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe-header h1 {
+    margin-top: 1.5rem;
+}
+
+/* Filtrering */
+
+
+
+/* Recipe cards */
+.recipe-cards {
+    margin: 0 auto;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    justify-items: center;
+}
+
+.recipe-card {
+    background-color: var(--secondaryColor);
+    max-width: 250px;
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.recipe-card p {
+    font-size: 14px;
+    color: white;
+}
+
+.recipe-picture {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-recipe-wrapper {
+    position: relative;
+}
+
+.course {
+    background-color: #DA64EC;
+    display: inline-block;
+    padding: 0.3rem 0.3rem;
+
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+   
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    color: white;
+}
+
+h3 {
+    color: white;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.recipe-wrapper {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.minutes-difficulty {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5.3rem;
+    margin-top: 1rem;
+}
+
+.difficulty {
+    display: block;
+}
+
+.kokkehuer {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+/* button style */
+#makeNow-button {
+    display: block;
+    margin: 20px auto;
+
+
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    padding: 0.4rem 4rem;
+    transition: 0.3s;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primærycolor);
+    box-shadow: var(--buttonShadow);
+    color: white;
+    font-size: 15px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+
+/* Button effect */
+#makeNow-button:hover {
+    background-color: var(--buttonHoverEffectColor);
+}
 
 /* lerke start */
 
