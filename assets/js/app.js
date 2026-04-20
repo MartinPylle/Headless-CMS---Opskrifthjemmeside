@@ -2,7 +2,7 @@
 const baseUrl = "https://api.martinnguyen.dk/wp-json/wp/v2/posts?per_page=100";
 
 getAllPosts()
-    
+
 //  henter alle public posts
 function getAllPosts() {
     fetch(baseUrl)
@@ -68,7 +68,7 @@ async function renderArticles(posts, selector) {
 //     // tilføjet en selector i loopet
 //     const allRecipes = document.querySelector(selector);
 //     console.log('posts:', posts)
-    
+
 //     posts.forEach(post => {
 
 //         let imageUrl = "";
@@ -79,7 +79,7 @@ async function renderArticles(posts, selector) {
 //         let ingredients = [];
 //         for (const key in post.acf.ingredienser) {
 //             const value = post.acf.ingredienser[key];
-            
+
 //             if (value) {
 //                 ingredients.push(value);
 //             }
@@ -88,7 +88,7 @@ async function renderArticles(posts, selector) {
 //         let directions = [];
 //         for (const key in post.acf.fremgangsmade) {
 //             const value = post.acf.fremgangsmade[key];
-            
+
 //             if (value) {
 //                 directions.push(value);
 //             }
