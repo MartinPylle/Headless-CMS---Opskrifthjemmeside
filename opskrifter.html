@@ -52,13 +52,41 @@
 					</div>
 			</div>
 		</div>
-		<div class="filtrering-button">
-			<button class="filter-clearfilter">filter</button>
-			<button class="filter-clearfilter">Clear filter</button>
+
+		<div class="filtrering-buttons">
+    <div class="filter">
+        <button class="course-button">Course<i class="fa-solid fa-angle-down"></i></button>
+        <div class="dropdown1 course-dropdown">
+			<p data-value="breakfast">Breakfast</p>
+            <p data-value="lunch">Lunch</p>
+            <p data-value="appetizers">Breakfast</p>
+        </div>
+    </div>
+
+    <div class="filter">
+        <button class="time-button">Time<i class="fa-solid fa-angle-down"></i></button>
+        <div class="dropdown1 time-dropdown">
+            <p data-value="15">Under 30 min</p>
+            <p data-value="30-60">Under 30-60 min</p>
+            <p data-value="60+">60+ min</p>
+        </div>
+    </div>
+
+    <div class="filter">
+        <button class="dietary-button">Dietary Preferences<i class="fa-solid fa-angle-down"></i></button>
+        <div class="dropdown1 dietary-dropdown">
+            <p data-value="glutenfri">Glutenfri</p>
+            <p data-value="vegansk">Vegan</p>
+            <p data-value="lactosefri">lactose-free</p>
+            <p data-value="vegatarian">Vegatarian</p>
+
+        </div>
+    </div>
 		</div>
+		<div class="line"></div>
 
 		<section class="recipe-cards">
-			<article class="recipe-card">
+			<!-- <article class="recipe-card">
 				<div class="image-recipe-wrapper">
 					<img class="recipe-picture" src="./assets/img/homemade-tortilla-chips.webp" alt="Home made tortilla">
 					<div class="course">Breakfast</div>
@@ -72,58 +100,12 @@
 						</div>
 						<div class="difficulty">
 							<p>Difficulty</p>
-							<img class="kokkehuer" src="./assets/img/difficulty hard.svg" alt="">
-						</div>
-					</div>
-				</div>
-				<button id="makeNow-button">Make now</button>
-			</article>
-
-			<article class="recipe-card">
-				<div class="image-recipe-wrapper">
-					<img class="recipe-picture" src="./assets/img/homemade-tortilla-chips.webp" alt="Home made tortilla">
-					<div class="course">Breakfast</div>
-				</div>
-				<div class="recipe-wrapper">
-					<h3>Home made tortilla chip</h3>
-					<div class="minutes-difficulty">
-						<div class="time">
-							<p>Total time</p>
-							<p>TOTAL TIME</p>
-						</div>
-						<div class="difficulty">
-							<p>Difficulty</p>
 							<img class="kokkehuer" src="./assets/img/kokkehue.svg" alt="">
+							<button id="makeNow-button">Make now</button>
 						</div>
 					</div>
 				</div>
-				<a href="#">
-					<button id="makeNow-button">Make now</button>
-				</a>
-			</article>
-
-			<article class="recipe-card">
-				<div class="image-recipe-wrapper">
-					<img class="recipe-picture" src="./assets/img/homemade-tortilla-chips.webp" alt="Home made tortilla">
-					<div class="course">Breakfast</div>
-				</div>
-				<div class="recipe-wrapper">
-					<h3>Home made tortilla chip</h3>
-					<div class="minutes-difficulty">
-						<div class="time">
-							<p>Total time</p>
-							<p>TOTAL TIME</p>
-						</div>
-						<div class="difficulty">
-							<p>Difficulty</p>
-							<img class="kokkehuer" src="./assets/img/kokkehue.svg" alt="">
-						</div>
-					</div>
-				</div>
-				<a href="#">
-					<button id="makeNow-button">Make now</button>
-				</a>
-			</article>
+			</article> -->
 		</section>
 	</main>
 	

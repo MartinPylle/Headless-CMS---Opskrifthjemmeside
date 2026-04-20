@@ -158,16 +158,73 @@ header img {
 }
 
 /* Filtrering */
+.filtrering-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 8rem;
+}
 
+.filter button {
+    display: inline;
+    padding: 0.3rem 1rem;
 
+    transition: 0.3s;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+
+    color: white;
+    background-color: var(--primærycolor);
+    box-shadow: var(--buttonShadow);
+}
+
+.filter button:hover {
+    background-color: var(--buttonHoverEffectColor);
+}
+
+.dropdown1 {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+    z-index: 1000;
+}
+
+.dropdown1.active {
+    display: block;
+}
+
+.filter {
+    position: relative;
+}
+
+.line {
+    height: 2px;
+    margin: 20px 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--primærycolor);
+}
 
 /* Recipe cards */
+
+.recipe-header h1 {
+    margin-top: 1rem;
+}
+
 .recipe-cards {
     margin: 0 auto;
     padding: 0 10px;
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
     justify-items: center;
+    margin-top: 5rem;
 }
 
 .recipe-card {
@@ -176,17 +233,18 @@ header img {
     
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 2rem;
 }
 
 .recipe-card p {
-    font-size: 14px;
+    font-size: 16px;
     color: white;
 }
 
 .recipe-picture {
     width: 100%;
-    height: auto;
+    height: 180px;
     object-fit: cover;
 }
 
@@ -212,8 +270,9 @@ header img {
 
 h3 {
     color: white;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
     margin-left: 0.5rem;
+    min-height: 3rem;
 }
 
 .recipe-wrapper {
@@ -226,18 +285,14 @@ h3 {
 .minutes-difficulty {
     display: flex;
     justify-content: space-evenly;
-    gap: 5.3rem;
+    gap: 4.5rem;
     margin-top: 1rem;
 }
 
-.difficulty {
-    display: block;
-}
-
 .kokkehuer {
-    width: 20px;
-    height: 20px;
+    font-size: 20px;
     color: white;
+   
 }
 
 /* button style */
@@ -357,27 +412,3 @@ form {
     font-weight: 500;
     font-family: "Playfair Display", serif;
 }
-
-/* test */
-/* .container {
-    max-width: 1000px;
-    margin: 1rem auto;
-    border-radius: 6px;
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0);
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    background-color: var(--backgroundsColor);
-}
-
-img {
-    max-width: 100%;
-}
-
-.author {
-    margin: 1rem 0;
-    font-style: italic;
-    color:burlywood;
-    font-weight: bold;
-} */
