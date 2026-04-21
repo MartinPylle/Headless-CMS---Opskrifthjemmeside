@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,8 +18,8 @@ body {
     --primærycolor: #E5B285;
     --secondaryColor: #ebc5a3;
     --backgroundsColor: #fbf2e7;
-    --textColor: #675d51; 
-    
+    --textColor: #675d51;
+
     --smSpacer: 25px;
     --mdSpacer: 50px;
     --xlSpacer: 75px;
@@ -28,20 +29,21 @@ body {
     --buttonShadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
     font-family: "Playfair Display", serif;
-} 
+}
 
 p {
     color: var(--textColor);
 }
 
-a, li {
+a,
+li {
     text-decoration: none;
     list-style: none;
     color: white;
@@ -65,11 +67,11 @@ nav {
 }
 
 nav li a {
-    border-bottom: 2px solid transparent ;
+    border-bottom: 2px solid transparent;
     transition: border-color 0.3s;
 }
 
-nav li a:hover{
+nav li a:hover {
     border-bottom: 2px solid #b58156;
 }
 
@@ -77,6 +79,7 @@ nav li a:hover{
     width: 45px;
     height: 45px;
 }
+
 .navlogo {
     display: flex;
     align-items: center;
@@ -328,7 +331,51 @@ h3 {
     background-color: var(--buttonHoverEffectColor);
 }
 
-/* lerke start */
+/* Lerke start */
+
+main {
+    background-color: var(--backgroundsColor);
+    margin: var(--mdSpacer);
+}
+
+.heroImgFp {
+    width: 100%;
+    overflow: hidden;
+}
+
+.heroImgFp img {
+    height: 600px;
+    width: 1400x;
+    display: block;
+    object-fit: contain;
+}
+
+main h1,
+h2 {
+    text-align: center;
+    padding-top: var(--smSpacer);
+}
+
+.introText {
+    text-align: center;
+}
+
+.aboutUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main img {
+    height: 350px;
+    width: 500px;
+    margin: var(--xlSpacer);
+}
+
+.aboutUs p {
+    grid-column: 2 / 2;
+    margin: var(--xlSpacer);
+}
+
 
 /* Sebastian start */
 
@@ -368,7 +415,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+
     width: 100%;
     max-width: 500px;
     margin: 1rem auto;
@@ -388,7 +435,7 @@ form {
     box-shadow: var(--buttonShadow);
     cursor: pointer;
     transition: 0.3s;
-    
+
     font-family: "Playfair Display", serif;
     font-size: 22px;
     font-weight: 500;

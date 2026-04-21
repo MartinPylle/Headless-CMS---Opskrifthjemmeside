@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple & Savory</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/function.js" defer></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navlogo">
+            <!-- https://fonts.google.com/icons?selected=Material+Symbols+Outlined:cooking:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=food&icon.size=24&icon.color=%23FFFFFF -->
+            <a href="index.html">
+                <img class="image-logo" src="./assets/img/logo-white.svg" alt="Logo">
+            </a>
+            <p class="logoname">Simpel & Savory</p>
+        </div>
+        <ul>
+            <li><a href="./opskrifter.html">Recipes</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">
+                    Recipes Collection
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <!-- Dropdown-indhold -->
+                <div class="dropdown-content">
+                    <a href="#">Summer Recipes</a>
+                    <a href="#">Food under 30 min</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="heroImgFp">
+        <img src="./assets/img/heroImg forside.png" alt="">
+    </div>
+
+
+    <main>
+        <h1>Welcome to Simple & Savory</h1>
+
+        <p class="introText">Discover recipes that make cooking enjoyable and approachable. From quick weekday meals to
+            dishes worth
+            sharing, we’re here to inspire you in the kitchen.</p>
+        <div class="aboutUs">
+            <img src="./assets/img/COLOURBOX52617072.jpg" alt="">
+
+            <p>Our mission is to make cooking a shared family activity. This website is dedicated to recipes
+                that invite
+                both children and adults into the kitchen, with simple steps and approachable dishes everyone can help
+                create. We believe cooking together strengthens connection, builds confidence, and turns everyday meals
+                into
+                meaningful family moments.</p>
+        </div>
+
+        <h2>Explore our recipes</h2>
+
+
+    </main>
+    <footer>
+        <div class="newsletter-content">
+            <div class="logo-content">
+                <a href="index.html">
+                    <img class="image-logo" src="./assets/img/logo-white.svg" alt="logo">
+                </a>
+                <p>Subscribe to our newsletter</p>
+                <p>to get ours newest recipes</p>
+            </div>
+            <!-- Form -->
+            <form>
+                <label for="name" aria-label="Enter your full name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name etc. Joakim Hansen"
+                    required><br>
+
+                <label for="email" aria-label="Enter your email address">Email address</label>
+                <p id="email-help">We'll only use your email for the newsletter</p>
+                <input type="text" id="email" name="email"
+                    placeholder="Enter your email here etc. JoakimHansen123@gmail.com" aria-describedby="email-help"
+                    required><br>
+
+                <input id="subscribe-button" type="submit" value="Subscribe" aria-label="Press the button to subcsribe">
+            </form>
+        </div>
+        <!-- Copyright-bar -->
+        <div class="copyrightbar">
+            <div class="copyright-container">
+                <p>© Make Better Food</p>
+                <p>Cooking With Love By Kevin Corney</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
