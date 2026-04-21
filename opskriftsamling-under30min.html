@@ -7,7 +7,7 @@
 	<title>Recipe collection | Under 30 min</title>
 	<link rel="stylesheet" href="./assets/css/style.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-	<script src="./assets/js/app.js" defer></script>
+	<script src="./assets/js/opskrift-collection-under-30min.js" defer></script>
 	<script src="./assets/js/function.js" defer></script>
 
 </head>
@@ -16,7 +16,7 @@
 	<nav>
 		<div class="navlogo">
 			<!-- https://fonts.google.com/icons?selected=Material+Symbols+Outlined:cooking:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=food&icon.size=24&icon.color=%23FFFFFF -->
-			 <a href="index.html">
+			 <a href="./forside.html">
 				 <img class="image-logo" src="/assets/img/logo-white.svg" alt="Logo">
 				</a>
 				<p class="logoname">Simpel & Savory</p>
@@ -24,19 +24,53 @@
 			<ul>
 				<li><a href="./opskrifter.html">Recipes</a></li>
 				<li class="dropdown">
-					<a href="#" class="dropbtn">
+					<a href="./opskriftsamling-forside.html" class="dropbtn">
 						Recipes Collection
 						<i class="fa-solid fa-angle-down"></i>
 					</a>					
 					<!-- Dropdown-indhold -->
 					<div class="dropdown-content">
-						<a href="#">Summer Recipes</a>
-						<a href="#">Food under 30 min</a>
+						<a href="./opskriftsamling-summer.html">Summer Recipes</a>
+						<a href="./opskriftsamling-under30min.html">Food under 30 min</a>
 					</div>
 				</li>
 			</ul>
 	</nav>
-	
+	<header> 
+		<img class="under30min-picture" src="./assets/img/Under 30 min.webp" alt="A man cutting vegetables">
+	</header>
+
+	<main class="under30min-container">
+		<div class="under30min-content">
+			<h1>Recipes under 30 minutes</h1>
+			<p>Food under 30 minutes is all about speed without sacrificing flavor. These recipes are designed to be quick, simple, and perfect for busy days, using easy techniques and minimal ingredients to get a delicious meal on the table fast.</p>
+		</div>
+
+		<div class="under30min-line"></div>
+
+		<section class="under30min-recipes-cards">
+			<!-- <article class="recipe-card">
+				<div class="image-recipe-wrapper">
+					<img class="recipe-picture" src="./assets/img/homemade-tortilla-chips.webp" alt="Home made tortilla">
+					<div class="course">Breakfast</div>
+				</div>
+				<div class="recipe-wrapper">
+					<h3>Titel</h3>
+					<div class="minutes-difficulty">
+						<div class="time">
+							<p>Total time</p>
+							<p>TOTAL TIME</p>
+						</div>
+						<div class="difficulty">
+							<p>Difficulty</p>
+							<div class="kokkehuer">KOKKEHUE</div>
+							<button id="makeNow-button">Make now</button>
+						</div>
+					</div>
+				</div>
+			</article> -->
+		</section>
+	</main>
 	<footer>
 		<div class="newsletter-content">
 			<div class="logo-content">

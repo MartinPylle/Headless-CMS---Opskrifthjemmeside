@@ -9,7 +9,7 @@ getCategories().then(() => getAllPosts());
 function getAllPosts() {
     fetch(baseUrl)
         .then(res => res.json())
-        .then(data => renderArticles(data, ".recipe-cards"))
+        .then(data => renderArticles(data, ".under30min-recipes-cards"))
         .catch(err => console.log("Fejl: ", err));
 }
 
@@ -55,10 +55,7 @@ function renderArticles(posts, selector) {
         
         let difficultyLevel = getDifficultyLevel(post.acf.svaerhedsgrad);
         let difficultyHTML = renderDifficulty(difficultyLevel);
-        // slet
-        // let courseName = categoriesMap[post.acf.course] || "";
-        // console.log('courseName:', courseName)
-
+        
         let imageUrl = "";
         if (post.acf.picture) {
             imageUrl = post.acf.picture.url;
@@ -74,26 +71,25 @@ function renderArticles(posts, selector) {
 
         allRecipes.innerHTML += `
         <article class="recipe-card">
-                <div class="image-recipe-wrapper">
-                    <img class="recipe-picture" src="${imageUrl}" alt="">
-                    <div class="course">${post.acf.course.label}</div>
-                </div>
-                <div class="recipe-wrapper">
-                    <h3>${post.acf.titel}</h3>
-                    <div class="minutes-difficulty">
-                        <div class="time">
-                            <p>Total time</p>
-                            <p>${post.acf.tid_i_alt}<i class="fa-regular fa-clock"></i></p>
-                        </div>
-                        <div class="difficulty">
-                            <p>Difficulty</p>
-                            <div class="kokkehuer">
+				<div class="image-recipe-wrapper">
+					<img class="recipe-picture" src="${imageUrl}" alt="">
+					<div class="course">${post.acf.course.label}</div>
+				</div>
+				<div class="recipe-wrapper">
+					<h3>${post.acf.titel}</h3>
+					<div class="minutes-difficulty">
+						<div class="time">
+							<p>Total time</p>
+							<p>${post.acf.tid_i_alt}<i class="fa-regular fa-clock"></i></p>
+						</div>
+						<div class="difficulty">
+							<p>Difficulty</p>
+							<div class="kokkehuer"> 
                             ${difficultyHTML} </div>
-                        </div>
-                    </div>
-                </div>
-                <button id="makeNow-button">Make now</button>
-            </article>`;
+						</div>
+					</div>
+				</div>
+				<button id="makeNow-button">Make now</button>
+			</article>`;
     });
 }
-

@@ -4,10 +4,10 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Simpel & Savory</title>
+	<title>Simpel & Savory | Opskriftsamling forside</title>
 	<link rel="stylesheet" href="./assets/css/style.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-	<script src="./assets/js/app.js" defer></script>
+	<script src="./assets/js/opskriftsamling-forsiden.js" defer></script>
 	<script src="./assets/js/function.js" defer></script>
 
 </head>
@@ -16,7 +16,7 @@
 	<nav>
 		<div class="navlogo">
 			<!-- https://fonts.google.com/icons?selected=Material+Symbols+Outlined:cooking:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=food&icon.size=24&icon.color=%23FFFFFF -->
-			 <a href="index.html">
+			 <a href="./forside.html">
 				 <img class="image-logo" src="/assets/img/logo-white.svg" alt="Logo">
 				</a>
 				<p class="logoname">Simpel & Savory</p>
@@ -24,18 +24,79 @@
 			<ul>
 				<li><a href="./opskrifter.html">Recipes</a></li>
 				<li class="dropdown">
-					<a href="#" class="dropbtn">
+					<a href="./opskriftsamling-forside.html" class="dropbtn">
 						Recipes Collection
 						<i class="fa-solid fa-angle-down"></i>
 					</a>					
 					<!-- Dropdown-indhold -->
 					<div class="dropdown-content">
-						<a href="#">Summer Recipes</a>
-						<a href="#">Food under 30 min</a>
+						<a href="./opskriftsamling-summer.html">Summer Recipes</a>
+						<a href="./opskriftsamling-under30min.html">Food under 30 min</a>
 					</div>
 				</li>
 			</ul>
 	</nav>
+
+	<header>
+		<img class="opskriftsamling-forsiden-picture" src="./assets/img/opskriftsamling-forsiden.webp" alt="Recipes site">
+	</header>
+	
+	<main class="opskriftsamling-forside-container">
+		<div class="opskriftsamling-forside-content">
+			<h1>Recipes collection</h1>
+			<p>Explore our recipe collections and get inspired</p>
+		</div>
+		<div class="opskriftsamling-forside-line"></div>
+
+		<h2>Summer recipes</h2>
+		<section class="summer-collection-recipes-cards">
+			<!-- <article class="recipe-card">
+				<div class="image-recipe-wrapper">
+					<img class="recipe-picture" src="./assets/img/homemade-tortilla-chips.webp" alt="Home made tortilla">
+					<div class="course">Breakfast</div>
+				</div>
+				<div class="recipe-wrapper">
+					<h3>Titel</h3>
+					<div class="minutes-difficulty">
+						<div class="time">
+							<p>Total time</p>
+							<p>TOTAL TIME</p>
+						</div>
+						<div class="difficulty">
+							<p>Difficulty</p>
+							<div class="kokkehuer">KOKKEHUE</div>
+							<a href="" class="btn">Make now</a>
+						</div>
+					</div>
+				</div>
+			</article> -->
+						
+		</section>
+		<h2>Under 30 minutes</h2>
+				<section class="under30min-collection-recipes-cards">
+			<!-- <article class="recipe-card">
+				<div class="image-recipe-wrapper">
+					<img class="recipe-picture" src="./assets/img/homemade-tortilla-chips.webp" alt="Home made tortilla">
+					<div class="course">Breakfast</div>
+				</div>
+				<div class="recipe-wrapper">
+					<h3>Titel</h3>
+					<div class="minutes-difficulty">
+						<div class="time">
+							<p>Total time</p>
+							<p>TOTAL TIME</p>
+						</div>
+						<div class="difficulty">
+							<p>Difficulty</p>
+							<div class="kokkehuer">KOKKEHUE</div>
+							<a href="" class="btn">Make now</a>
+						</div>
+					</div>
+				</div>
+			</article> -->
+		</section>
+	</main>
+	
 	
 	<footer>
 		<div class="newsletter-content">
