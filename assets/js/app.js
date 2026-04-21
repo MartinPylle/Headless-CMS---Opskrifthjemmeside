@@ -18,7 +18,7 @@ function renderArticles1(posts, selector) {
     const glutenEl = document.querySelector(selector);
     console.log('posts:', posts)
     posts.forEach(post => {
-        let ingredients = [];   
+        let ingredients = [];
         for (const key in post.acf.diaet) {
             const value = post.acf.diaet[key];
             if (value) {
@@ -51,3 +51,5 @@ function getRecipes() {
         .then(data => renderArticles1(data))
         .catch(err => console.log("Fejl: ", err));
 }
+
+getRecipes()
