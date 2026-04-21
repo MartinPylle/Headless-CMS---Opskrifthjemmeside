@@ -63,17 +63,20 @@ function renderArticles(posts, selector) {
         if (post.acf.picture) {
             imageUrl = post.acf.picture.url;
         }
-        // slet 
-        // let courseUrl = "";
-        // if (post.acf.course) {
-        //     courseUrl = post.acf.course
-        // }
+         
+        let courseName = "";
+        if (Array.isArray(post.acf.course)) {
+            courseName = post.acf.course.map(id => categoriesMap[id]).join(", ");
+        } else {
+            courseName = categoriesMap[post.acf.course];
+        }
+
 
         allRecipes.innerHTML += `
         <article class="recipe-card">
 				<div class="image-recipe-wrapper">
 					<img class="recipe-picture" src="${imageUrl}" alt="">
-					<div class="course">Breakfast</div>
+					<div class="course">${post.acf.course.label}</div>
 				</div>
 				<div class="recipe-wrapper">
 					<h3>${post.acf.titel}</h3>

@@ -331,7 +331,51 @@ h3 {
     background-color: var(--buttonHoverEffectColor);
 }
 
-/* lerke start */
+/* Lerke start */
+
+main {
+    background-color: var(--backgroundsColor);
+    margin: var(--mdSpacer);
+}
+
+.heroImgFp {
+    width: 100%;
+    overflow: hidden;
+}
+
+.heroImgFp img {
+    height: 600px;
+    width: 1400x;
+    display: block;
+    object-fit: contain;
+}
+
+main h1,
+h2 {
+    text-align: center;
+    padding-top: var(--smSpacer);
+}
+
+.introText {
+    text-align: center;
+}
+
+.aboutUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main img {
+    height: 350px;
+    width: 500px;
+    margin: var(--xlSpacer);
+}
+
+.aboutUs p {
+    grid-column: 2 / 2;
+    margin: var(--xlSpacer);
+}
+
 
 /* Sebastian start */
 .directions li,
