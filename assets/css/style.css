@@ -303,7 +303,7 @@ h3 {
 }
 
 /* button style */
-.btn {
+.btn, #makeNow-button {
     display: block;
     margin: 20px auto;
 
@@ -325,7 +325,7 @@ h3 {
 }
 
 /* Button effect */
-.btn:hover {
+.btn:hover, #makeNow-button:hover  {
     background-color: var(--buttonHoverEffectColor);
 }
 
