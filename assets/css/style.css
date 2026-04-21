@@ -303,7 +303,7 @@ h3 {
 }
 
 /* button style */
-#makeNow-button {
+.btn {
     display: block;
     margin: 20px auto;
 
@@ -325,8 +325,57 @@ h3 {
 }
 
 /* Button effect */
-#makeNow-button:hover {
+.btn:hover {
     background-color: var(--buttonHoverEffectColor);
+}
+
+/* Opskriftsamlingforsiden */
+.opskriftsamling-forsiden-picture {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.opskriftsamling-forside-container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    padding: 0 2rem;
+    background-color: var(--backgroundsColor);
+    margin-top: 1.5rem;
+}
+
+.opskriftsamling-forside-content {
+    text-align: center;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+
+.opskriftsamling-forside-content p {
+    margin-top: 1.5rem;
+}
+
+.opskriftsamling-forside-line {
+    height: 2px;
+    margin: 20px 0;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--primærycolor);
+}
+
+.opskriftsamling-forside-container h2 {
+    margin-bottom: 1.5rem;
+    margin-left: 1.6rem;
+}
+
+.summer-collection-recipes-cards, .under30min-collection-recipes-cards {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 /* opskriftsamling Summer */
