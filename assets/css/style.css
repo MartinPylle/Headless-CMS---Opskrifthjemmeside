@@ -199,7 +199,7 @@ header img {
     right: 0;
     background: white;
     padding: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 
     z-index: 1000;
 }
@@ -239,7 +239,7 @@ header img {
 .recipe-card {
     background-color: var(--secondaryColor);
     max-width: 250px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -269,7 +269,7 @@ header img {
     position: absolute;
     bottom: -8px;
     left: 20px;
-   
+
     border-radius: 10px;
     font-size: 13px;
     font-weight: 500;
@@ -301,7 +301,7 @@ h3 {
 .kokkehuer {
     font-size: 20px;
     color: white;
-   
+
 }
 
 /* button style */
@@ -310,7 +310,7 @@ h3 {
     margin: 20px auto;
 
 
-    margin-top: 1rem; 
+    margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 0.4rem 4rem;
     transition: 0.3s;
@@ -378,6 +378,57 @@ main img {
 
 
 /* Sebastian start */
+.directions li,
+.ingredients li {
+    color: black;
+    list-style-type: disc;
+    padding: 5px;
+}
+
+.grid {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+    text-align: left;
+    padding-bottom: 1.5rem;
+
+}
+
+.recipeImg {
+    max-width: 500px;
+    padding: 1.5rem;
+}
+
+.explore {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.explore h2 {
+    text-align: center;
+}
+
+.recipePageTitle {
+    text-align: center;
+}
+
+.recipeDesc {
+    max-width: 750px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.grid h3 {
+    color: black;
+    margin: 0;
+}
+
+.explore .recipe-cards {
+    margin-top: 30px;
+}
 
 /* Anton start */
 
