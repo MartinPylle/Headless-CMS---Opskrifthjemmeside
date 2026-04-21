@@ -332,48 +332,45 @@ h3 {
 }
 
 /* Lerke start */
-
-main {
-    background-color: var(--backgroundsColor);
-    margin: var(--mdSpacer);
-}
-
-.heroImgFp {
-    width: 100%;
-    overflow: hidden;
-}
-
 .heroImgFp img {
-    height: 600px;
-    width: 1400x;
-    display: block;
-    object-fit: contain;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 
-main h1,
-h2 {
+main h1 {
     text-align: center;
+    padding-top: 2rem
+}
+
+
+h2 {
     padding-top: var(--smSpacer);
 }
 
 .introText {
+    margin-top: 1rem;
     text-align: center;
+}
+
+.aboutUs img {
+    width: 500px;
+    height: auto;
 }
 
 .aboutUs {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
 }
 
-main img {
-    height: 350px;
-    width: 500px;
-    margin: var(--xlSpacer);
-}
-
-.aboutUs p {
-    grid-column: 2 / 2;
-    margin: var(--xlSpacer);
+.recipe-cards-forsiden {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
 }
 
 

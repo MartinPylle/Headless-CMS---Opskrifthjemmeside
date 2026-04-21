@@ -7,8 +7,7 @@
     <title>Simple & Savory</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <script src="./assets/js/app.js" defer></script>
-    <script src="./assets/js/function.js" defer></script>
+    <script src="./assets/js/forside.js" defer></script>
 
 </head>
 
@@ -19,48 +18,70 @@
             <a href="index.html">
                 <img class="image-logo" src="./assets/img/logo-white.svg" alt="Logo">
             </a>
-            <p class="logoname">Simpel & Savory</p>
+            <p class="logoname">Simple & Savory</p>
         </div>
         <ul>
             <li><a href="./opskrifter.html">Recipes</a></li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">
+                <a href="./opskriftsamling-forside.html" class="dropbtn">
                     Recipes Collection
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <!-- Dropdown-indhold -->
                 <div class="dropdown-content">
-                    <a href="#">Summer Recipes</a>
-                    <a href="#">Food under 30 min</a>
+                    <a href="./opskriftsamling-summer.html">Summer Recipes</a>
+                    <a href="./opskriftsamling-under30min.html">Food under 30 min</a>
                 </div>
             </li>
         </ul>
     </nav>
-    <div class="heroImgFp">
-        <img src="./assets/img/heroImg forside.png" alt="">
-    </div>
+    <header>
+        <div class="heroImgFp">
+            <img src="./assets/img/heroImg forside.png" alt="">
+        </div>
+    </header>
 
-
-    <main>
-        <h1>Welcome to Simple & Savory</h1>
-
-        <p class="introText">Discover recipes that make cooking enjoyable and approachable. From quick weekday meals to
-            dishes worth
-            sharing, we’re here to inspire you in the kitchen.</p>
+    <main class="recipes-content">
+        <div class="forside-header-content">
+            <h1>Welcome to Simple & Savory</h1>
+            <p class="introText">Discover recipes that make cooking enjoyable and approachable. From quick weekday meals to
+                dishes worth
+                sharing, we're here to inspire you in the kitchen.</p>
+        </div>
         <div class="aboutUs">
-            <img src="./assets/img/COLOURBOX52617072.jpg" alt="">
-
-            <p>Our mission is to make cooking a shared family activity. This website is dedicated to recipes
-                that invite
-                both children and adults into the kitchen, with simple steps and approachable dishes everyone can help
-                create. We believe cooking together strengthens connection, builds confidence, and turns everyday meals
-                into
-                meaningful family moments.</p>
+                <img src="./assets/img/forside-content-billede.webp" alt="">
+                <p>Our mission is to make cooking a shared family activity. This website is dedicated to recipes
+                    that invite
+                    both children and adults into the kitchen, with simple steps and approachable dishes everyone can help
+                    create. We believe cooking together strengthens connection, builds confidence, and turns everyday meals
+                    into
+                    meaningful family moments.</p>
         </div>
 
         <h2>Explore our recipes</h2>
-
-
+        <!-- Cards -->
+        <section class="recipe-cards-forsiden">
+			<!-- <article class="recipe-card-forside">
+				<div class="image-recipe-wrapper">
+					<img class="recipe-picture" src="./assets/img/homemade-tortilla-chips.webp" alt="Home made tortilla">
+					<div class="course">Breakfast</div>
+				</div>
+				<div class="recipe-wrapper">
+					<h3>Titel</h3>
+					<div class="minutes-difficulty">
+						<div class="time">
+							<p>Total time</p>
+							<p>TOTAL TIME</p>
+						</div>
+						<div class="difficulty">
+							<p>Difficulty</p>
+							<div class="kokkehuer">KOKKEHUE</div>
+							<button id="makeNow-button">Make now</button>
+						</div>
+					</div>
+				</div>
+			</article> -->
+        </section>
     </main>
     <footer>
         <div class="newsletter-content">

@@ -9,7 +9,7 @@ getCategories().then(() => getAllPosts());
 function getAllPosts() {
     fetch(baseUrl)
         .then(res => res.json())
-        .then(data => renderArticles(data, ".recipe-cards"))
+        .then(data => renderArticles(data, ".recipe-cards-forsiden"))
         .catch(err => console.log("Fejl: ", err));
 }
 
@@ -55,10 +55,7 @@ function renderArticles(posts, selector) {
         
         let difficultyLevel = getDifficultyLevel(post.acf.svaerhedsgrad);
         let difficultyHTML = renderDifficulty(difficultyLevel);
-        // slet
-        // let courseName = categoriesMap[post.acf.course] || "";
-        // console.log('courseName:', courseName)
-
+        
         let imageUrl = "";
         if (post.acf.picture) {
             imageUrl = post.acf.picture.url;
