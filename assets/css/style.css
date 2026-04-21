@@ -23,7 +23,7 @@ body {
     --mdSpacer: 50px;
     --xlSpacer: 75px;
 
-    --buttonHoverEffect: #b58156;
+    --buttonHoverEffectColor: #b58156;
     --headerShadow: 4px 4px 4px #000000cc;
     --buttonShadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
@@ -57,6 +57,7 @@ nav {
     /* sticky navbar */
     position: sticky;
     top: 0;
+    z-index: 9999;
     /* overflow: hidden; */
 
     padding: 1rem;
@@ -90,14 +91,14 @@ nav li a:hover{
     font-size: 25px;
 }
 
-li {
+nav li {
     font-weight: 500;
     font-size: 25px;
     margin-right: 10rem;
 }
 
 /* Dropdown */
-ul {
+nav ul {
     display: flex;
 }
 
@@ -127,6 +128,205 @@ ul {
 }
 
 /* Martin start */
+header img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.recipes-content {
+    background-color: var(--backgroundsColor);
+    margin-top: 1.5rem;
+}
+
+.recipes-content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    padding: 0 2rem;
+}
+
+.recipes-header-content {
+    text-align: center;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+
+.recipe-header h1 {
+    margin-top: 1.5rem;
+}
+
+.recipe-content1 p {
+    margin-top: 1rem;
+}
+
+/* Filtrering */
+.filtrering-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.filter button {
+    display: inline;
+    padding: 0.3rem 1rem;
+
+    transition: 0.3s;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+
+    color: white;
+    background-color: var(--primærycolor);
+    box-shadow: var(--buttonShadow);
+}
+
+.filter button:hover {
+    background-color: var(--buttonHoverEffectColor);
+}
+
+.dropdown1 {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+    z-index: 1000;
+}
+
+.dropdown1.active {
+    display: block;
+}
+
+.filter {
+    position: relative;
+}
+
+.line {
+    height: 2px;
+    margin: 20px 0;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--primærycolor);
+}
+
+/* Recipe cards */
+
+.recipe-header h1 {
+    margin-top: 1rem;
+}
+
+.recipe-cards {
+    margin: 0 auto;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    justify-items: center;
+    margin-top: 5rem;
+}
+
+.recipe-card {
+    background-color: var(--secondaryColor);
+    max-width: 250px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.recipe-card p {
+    font-size: 16px;
+    color: white;
+}
+
+.recipe-picture {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.image-recipe-wrapper {
+    position: relative;
+}
+
+.course {
+    background-color: #DA64EC;
+    display: inline-block;
+    padding: 0.3rem 0.3rem;
+
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+   
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    color: white;
+}
+
+h3 {
+    color: white;
+    margin-top: 0.7rem;
+    margin-left: 0.5rem;
+    min-height: 3rem;
+}
+
+.recipe-wrapper {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.minutes-difficulty {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4.5rem;
+    margin-top: 1rem;
+}
+
+.kokkehuer {
+    font-size: 20px;
+    color: white;
+   
+}
+
+/* button style */
+#makeNow-button {
+    display: block;
+    margin: 20px auto;
+
+
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    padding: 0.4rem 4rem;
+    transition: 0.3s;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primærycolor);
+    box-shadow: var(--buttonShadow);
+    color: white;
+    font-size: 15px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+
+/* Button effect */
+#makeNow-button:hover {
+    background-color: var(--buttonHoverEffectColor);
+}
 
 /* lerke start */
 
@@ -196,7 +396,7 @@ form {
 
 /* hover effect */
 #subscribe-button:hover {
-    background-color: var(--buttonHoverEffect);
+    background-color: var(--buttonHoverEffectColor);
 }
 
 /* Copyrightbar-container */
