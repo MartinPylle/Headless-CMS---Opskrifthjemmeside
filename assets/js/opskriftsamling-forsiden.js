@@ -95,7 +95,7 @@ const id = params.get("id");
 
 // if statement tjekker om id'et findes, hvis ikke returnerer den et null
 if (id) { 
-    // Her laver vi en request til Url'en for at få den specifike id fra hvert post, acf_format=standard parameteren fortæller Wordpress at returnerer ACF i en ren og læseligt data. 
+    // Her laver vi en request til Url'en for at få den specifike id fra hvert post, acf_format=standard parameteren fortæller Wordpress at returnerer ACF i en ren og læseligt data.
     fetch(`https://api.martinnguyen.dk/wp-json/wp/v2/posts/${id}?acf_format=standard`)
         .then(res => res.json())
         .then(post => {

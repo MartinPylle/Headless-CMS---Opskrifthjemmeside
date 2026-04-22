@@ -295,7 +295,7 @@ h3 {
     gap: 4.5rem;
     margin-top: 1rem;
 }
-
+/* Kokkehue style */
 .kokkehuer {
     font-size: 20px;
     color: white;
@@ -573,8 +573,6 @@ h2 {
     margin-top: 30px;
 }
 
-/* Anton start */
-
 
 /* Footer */
 .newsletter-content {
@@ -589,6 +587,7 @@ h2 {
 }
 
 /* Display block bruges til at få label-navn til at stå ovenover inputfeltet, da det er en inline-element */
+/* Newsletter */
 label {
     display: block;
     text-align: left;
